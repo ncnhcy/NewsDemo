@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_home_news"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff" >
+
+    <me.maxwin.view.XListView
+        android:id="@+id/xlv_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@drawable/bg_slidingmenu_left" >
+    </me.maxwin.view.XListView>
+
+</LinearLayout>

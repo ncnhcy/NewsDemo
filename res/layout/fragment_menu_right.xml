@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_slidingmenu_left" >
+
+    <ImageView
+        android:id="@+id/iv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/biz_pc_main_info_profile_avatar_bg_dark" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="点击登录"
+        android:textColor="#fff"
+        android:textSize="25dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_login"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/iv_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/qq_login_icon" />
+
+        <TextView
+            android:id="@+id/tv_qq_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_qq"
+            android:text="使用QQ登录"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_share"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="更新版本"
+        android:textColor="#fff"
+        android:textSize="22dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/share_little_bg"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/iv_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:src="@drawable/fun_share_weixin" />
+
+        <ImageView
+            android:id="@+id/iv_qq_share"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/addimport_qq" />
+
+        <ImageView
+            android:id="@+id/iv_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/fun_share_friends" />
+
+        <ImageView
+            android:id="@+id/iv_weibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/fun_share_weibo" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/center_top_bg" >
+
+        <TextView
+            android:id="@+id/tv_logoutinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="24dp"
+            android:text="注销"
+            android:textColor="#fff"
+            android:textSize="24dp" />
+
+        <ImageView
+            android:id="@+id/iv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/biz_pc_main_info_profile_avatar_bg_dark" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="用户名"
+            android:textColor="#fff"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tv_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="积分 :"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_postmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发帖次数统计" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录日志" />
+
+        <ListView
+            android:id="@+id/lv_log"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

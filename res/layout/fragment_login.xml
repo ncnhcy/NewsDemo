@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="@drawable/background_login_div"
+        android:padding="25dp" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:text="账号"
+            android:textColor="#eeffffff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:cursorVisible="true"
+            android:hint="请输入账号..."
+            android:inputType="text"
+            android:singleLine="true"
+            android:textCursorDrawable="@null" />
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_name"
+            android:layout_marginTop="3dp"
+            android:text="密码"
+            android:textColor="#eeffffff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_password"
+            android:cursorVisible="true"
+            android:inputType="textPassword"
+            android:password="true"
+            android:singleLine="true"
+            android:textCursorDrawable="@null" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/et_password"
+            android:layout_below="@id/et_password"
+            android:background="@drawable/btn_login_selecter"
+            android:text="登录"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_noname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="没有账号?"
+            android:textColor="#EEFFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_noname"
+            android:clickable="true"
+            android:text="注册"
+            android:textColor="#ffffE5"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_forgetregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:clickable="true"
+            android:text="忘记密码？"
+            android:textColor="#ffffE5"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

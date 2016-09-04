@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="@drawable/background_login_div"
+        android:padding="25dp" >
+
+        <EditText
+            android:id="@+id/et_forget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="请输入邮箱" />
+
+        <Button
+            android:id="@+id/btn_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/et_forget"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_login_selecter"
+            android:text="提交"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

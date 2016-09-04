@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_left_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_commeet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="25dp" >
+
+        <ImageView
+            android:id="@+id/iv_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/biz_navigation_tab_ties" />
+
+        <TextView
+            android:id="@+id/tv_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/iv_c"
+            android:text="头条"
+            android:textColor="#Fee"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_c2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_c"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/iv_c"
+            android:text="HeadLine"
+            android:textColor="#Fee"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp" >
+
+        <ImageView
+            android:id="@+id/iv_menu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/biz_navigation_tab_news" />
+
+        <TextView
+            android:id="@+id/tv_menu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/iv_menu1"
+            android:text="新闻"
+            android:textColor="#Fee"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_menu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_menu1"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/iv_menu1"
+            android:text="News"
+            android:textColor="#Fee"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_favrite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp" >
+
+        <ImageView
+            android:id="@+id/iv_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/biz_navigation_tab_read" />
+
+        <TextView
+            android:id="@+id/tv_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/iv_f"
+            android:text="收藏"
+            android:textColor="#Fee"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_f2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_f"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/iv_f"
+            android:text="Favorite"
+            android:textColor="#Fee"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_local"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/biz_navigation_tab_local_news" />
+
+        <TextView
+            android:id="@+id/tv_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/iv_l"
+            android:text="本地"
+            android:textColor="#Fee"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_l2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_l"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/iv_l"
+            android:text="Local"
+            android:textColor="#Fee"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp" >
+
+        <ImageView
+            android:id="@+id/iv_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/biz_navigation_tab_pics" />
+
+        <TextView
+            android:id="@+id/tv_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/iv_p"
+            android:text="图片"
+            android:textColor="#Fee"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_p"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/iv_p"
+            android:text="Photo"
+            android:textColor="#Fee"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+</LinearLayout>

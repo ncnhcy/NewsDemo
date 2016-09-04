@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:layout_margin="8dp" >
+
+    <ImageView
+        android:id="@+id/iv_viewicon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="5dp"
+        android:background="#00FFFF" />
+
+    <TextView
+        android:id="@+id/tv_news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/iv_viewicon"
+        android:text="新闻标题"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_news_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/iv_viewicon"
+        android:singleLine="true"
+        android:text="特大新闻，昨夜母猪翻山越岭到达天堂！"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_news_author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:singleLine="true"
+        android:text="特选"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_news_realtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="6dp"
+        android:text="早间新闻"
+        android:textSize="12sp" />
+
+</RelativeLayout>

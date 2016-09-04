@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="@drawable/background_login_div"
+        android:padding="25dp" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:text="注册账号:"
+            android:textColor="#eeffffff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginTop="20dp"
+            android:cursorVisible="true"
+            android:hint="请输入账号..."
+            android:inputType="text"
+            android:singleLine="true"
+            android:textCursorDrawable="@null" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_name"
+            android:layout_marginTop="20dp"
+            android:cursorVisible="true"
+            android:hint="请输入邮箱"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textCursorDrawable="@null" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_email"
+            android:layout_marginTop="15dp"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/et_repeatpassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_password"
+            android:layout_marginTop="15dp"
+            android:cursorVisible="true"
+            android:hint="请再次输入密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textCursorDrawable="@null" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_repeatpassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/btn_register_selecter"
+            android:cursorVisible="true"
+            android:text="注册"
+            android:textColor="#FFF"
+            android:textCursorDrawable="@null"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>
